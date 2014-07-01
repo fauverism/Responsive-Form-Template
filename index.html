@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Responsive Form Template</title>
+	<link rel="stylesheet" href="styles/bootstrap.min.css"/>
+	<link rel="stylesheet" href="styles/main.css"/>
+</head>
+<body>
+	<main>
+	<h1>Responsive Form Template</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorum eaque eum magni odit perferendis quis tempora unde! Aperiam debitis eveniet exercitationem facere fugiat labore minima modi similique voluptates.</p>
+	
+	<h3>Details</h3>
+	<p><code>placeholder</code></p>
+
+	<h2>Simple</h2>
+	<h2>Extended</h2>
+	<h2>Super Sized</h2>
+	<h2>eCommerce</h2>
+	<h2>Mad Libs</h2>
+
+	<h2>Kitchen Sink</h2><!-- TODO: above, country(flag & country code), url, upload w/ search, message-->
+	<form action="" class="extended">
+		<ul class="extended-form">
+			<h5>Progress</h5>
+			<progress max="100" value="0" id="progress"></progress>
+			<li>
+				<label for="first-name"></label>
+				<input type="text" placeholder="First Name" id="first-name" required="<span>*</span>"/>
+			</li>
+			<li>
+				<label for="last-name"></label>
+				<input type="text" placeholder="Last Name" id="last-name"/>
+			</li>
+			<li>
+				<label for="email"></label>
+				<input type="email" placeholder="Email" id="email"/>
+			</li>
+			<li>
+				<label for="email-international"></label>
+				<input type="email" placeholder="International Email" id="email-international"/>
+			</li>
+			<li>
+				<label for="phone"></label>
+				<input type="tel" placeholder="Phone" id="phone"/>
+			</li>
+			<li>
+				<label for="street"></label>
+				<input type="text" placeholder="Street" id="street"/>
+			</li>
+			<li>
+				<label for="zip"></label>
+				<input type="number" placeholder="Zip" id="zip"/>
+			</li>
+			<li>
+				<label for="city"></label>
+				<input type="text" placeholder="City" id="city"/>
+			</li>
+			<li>
+				<label for="state"></label>
+				<input type="text" placeholder="State" id="state"/>
+			</li>
+			<li>
+				<label for="country"></label>
+				<input type="text" placeholder="Country" id="country"/>
+			</li>
+			<li>
+				<label for="location"></label>
+				<input type="text" placeholder="Location" id="location"/>
+				<!--TODO: map-->
+			</li>
+			<li>
+				<label for="range"></label>
+				<input type="range" id="range"/>
+			</li>
+			<li>
+				<label for="time"></label>
+				<input type="time" placeholder="time" id="time"/>
+			</li>
+			<li>
+				<label for="datetime"></label>
+				<input type="datetime" placeholder="Date Time" id="datetime"/>
+			</li>
+			<li>
+				<label for="datetime-local"></label>
+				<input type="datetime-local" placeholder="Date Time Local" id="datetime-local"/>
+			</li>
+			<li>
+				<label for="date"></label>
+				<input type="date" placeholder="Date" id="date"/>
+			</li>
+			<li>
+				<label for="week"></label>
+				<input type="week" placeholder="Week" id="week"/>
+			</li>
+			<li>
+				<label for="month"></label>
+				<input type="month" placeholder="Month" id="month"/>
+			</li>
+			<li>
+				<label for="number"></label>
+				<input type="number" placeholder="Number" id="number"/>
+			</li>
+			<li>
+				<label for="color"></label>
+				<input type="color" placeholder="Color" id="color"/>
+			</li>
+			<li>
+				<h4>Checkboxes</h4>
+			</li>
+			<li>
+				<h4>Radios</h4>
+			</li>
+			<li>
+				<h4>Dropdown</h4>
+			</li>
+			<li>
+				<h4>Rating</h4>
+			</li>
+		</ul>
+	</form>
+
+	<!-- TODO:
+		- double-byte international email <input type="text" name="email" value="gordo@日本.jp" pattern="[^ @]*@[^ @]*">
+		- credit card, digits select the type of card
+	-->
+
+	<!-- TODO: like ethan marcotte-->
+	<h3>Attributes</h3>
+	<p>How they are included</p>
+	<!-- TODO: placeholder, placeholder autofocus, autocomplete, required, pattern, list, multiple, novalidate, formnovalidate, form, formaction, formenctype, formmethod, formtarget -->
+	<h3>Errors, Alerts, Messages,</h3>
+	</main>
+</body>
+</html>
