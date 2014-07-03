@@ -1,5 +1,6 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 // bower:scss
+@import "bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
 // endbower
 
 .browsehappy {
@@ -67,12 +68,33 @@ body {
   }
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 730px;
-  }
+/*
+  Responsive sm;)e
+*/
 
+/* Small screen, non-retina */
+@media only screen and (min-width: 320px) {
+  input {
+    font-size: 1.83rem;
+  }
+}
+
+/* Small screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
+
+}
+
+/* Medium screen, non-retina */
+@media only screen and (min-width: 700px) {
+  input {
+    font-size: 2.5rem;
+  }
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -89,3 +111,82 @@ body {
     border-bottom: 0;
   }
 }
+
+/* Medium screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
+
+}
+
+/* Large screen, non-retina */
+@media only screen and (min-width: 1000px) {
+  input {
+    font-size: 4rem;
+  }
+}
+
+/* Large screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+
+}
+
+//Custom
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+input {
+  background: #f5f5f5;
+  border: none;
+  display: flex;
+//  font-size: 1.35rem;
+  height: 3.5rem;
+  padding: 4%;
+  width: 100%; }
+
+span:required {
+  background: darkred;
+  display: block;
+  height: 6%;
+  width: 6%; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #222; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #222;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #222;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #222; }
+
+main {
+  margin: 0 auto;
+  width: 80%; }
+
+progress {
+  width: 100%; }

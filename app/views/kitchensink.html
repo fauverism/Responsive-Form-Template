@@ -1,5 +1,5 @@
 <h1>Responsive Form Template</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda dignissimos dolorum eaque eum magni odit perferendis quis tempora unde! Aperiam debitis eveniet exercitationem facere fugiat labore minima modi similique voluptates.</p>
+<p>Anything and everything that you'll ever need to create a form online. If you don't see it here please view the source and look for TODO. It could be a wip. If you still don't see it then please feel free to request it or submit on your own via a PR.</p>
 
 <h3>Details</h3>
 <p><code>placeholder</code></p>
@@ -11,26 +11,29 @@
 <h2>Mad Libs</h2>-->
 
 <h2>Kitchen Sink</h2><!-- TODO: above, country(flag & country code), url, upload w/ search, message-->
+<div class="row">
 <form action="" class="extended">
     <h5>Progress</h5>
-    <progress max="100" value="0" id="progress"></progress>
-    <ul class="extended-form">
-        <li>
-            <label for="first-name"></label>
-            <input type="text" placeholder="First Name" id="first-name" required="<span>*</span>"/>
-        </li>
-        <li>
-            <label for="last-name"></label>
-            <input type="text" placeholder="Last Name" id="last-name"/>
-        </li>
-        <li>
+    <progress max="100" value="10" id="progress"></progress>
+    <div class="row">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="form-item four columns">
+                    <label for="first-name"></label>
+                    <input type="text" placeholder="First Name" id="first-name" required="<span>*</span>"/>
+                </div>
+                <div class="form-item five columns">
+                   <label for="last-name"></label>
+                    <input type="text" placeholder="Last Name" id="last-name"/>
+                </div>
+            </div>
             <label for="email"></label>
             <input type="email" placeholder="Email" id="email"/>
-        </li>
-        <li>
             <label for="email-international"></label>
             <input type="email" placeholder="International Email" id="email-international"/>
-        </li>
+        </div><!-- /.twelve columns -->
+    </div>
+    <ul class="extended-form">
         <li>
             <label for="phone"></label>
             <input type="tel" placeholder="Phone" id="phone"/>
@@ -110,7 +113,7 @@
         </li>
     </ul>
 </form>
-
+</div>
 <!-- TODO:
     - double-byte international email <input type="text" name="email" value="gordo@日本.jp" pattern="[^ @]*@[^ @]*">
     - credit card, digits select the type of card

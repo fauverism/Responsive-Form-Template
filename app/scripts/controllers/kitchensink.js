@@ -2,9 +2,9 @@
 
 /**
  * @ngdoc function
- * @name ngResponsiveFormApp.controller:AboutCtrl
+ * @name ngResponsiveFormApp.controller:KitchenSinkCtrl
  * @description
- * # AboutCtrl
+ * # KitchenSinkCtrl
  * Controller of the ngResponsiveFormApp
  */
 angular.module('ngResponsiveFormApp')

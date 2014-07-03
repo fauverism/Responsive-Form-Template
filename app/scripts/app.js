@@ -27,10 +27,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'AboutCtrl'
       })
-        .when('/kitchensink', {
-            templateUrl: 'views/kitchensink.html',
-            controller: 'KitchenSinkCtrl'
-        })
+    .when('/kitchensink', {
+        templateUrl: 'views/kitchensink.html',
+        controller: 'KitchenSinkCtrl'
+    })
       .otherwise({
         redirectTo: '/'
       });
