@@ -1,0 +1,161 @@
+/* Small screen, non-retina */
+@media only screen and (min-width: 320px) {
+	input {
+		font-size: 1.83rem;
+	}
+}
+
+/* Small screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 320px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 320px),
+only screen and (                min-resolution: 192dpi) and (min-width: 320px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 320px) {
+	height: 40px;
+}
+
+/* Medium screen, non-retina */
+@media only screen and (min-width: 700px) {
+	input {
+		font-size: 2.5rem;
+		height: 80px;
+	}
+	/* Remove the padding we set earlier */
+	.header,
+	.marketing,
+	.footer {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/* Space out the masthead */
+	.header {
+		margin-bottom: 30px;
+	}
+	/* Remove the bottom border on the jumbotron for visual effect */
+	.jumbotron {
+		border-bottom: 0;
+	}
+}
+
+/* Medium screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 700px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 700px),
+only screen and (                min-resolution: 192dpi) and (min-width: 700px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 700px) {
+
+}
+
+/* Large screen, non-retina */
+@media only screen and (min-width: 1000px) {
+	input {
+		font-size: 4rem;
+		height: 100px;
+	}
+	.four, .four .row, .five, .five .row {
+		display: block;
+		float: left;
+	}
+	.four, .four .row {
+		width: 41.66667%;
+	}
+	.five, .five .row {
+		width: 41.66667%;
+	}
+}
+
+/* Large screen, retina, stuff to override above media query */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1300px),
+only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1300px),
+only screen and (                min-resolution: 192dpi) and (min-width: 1300px),
+only screen and (                min-resolution: 2dppx)  and (min-width: 1300px) {
+
+}
+
+//Custom
+ul {
+	margin: 0;
+	padding: 0; }
+
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0; }
+
+input {
+	background: #f5f5f5;
+	border: none;
+	display: flex;
+	padding: 4%;
+	width: 100%;
+}
+
+input[type=color] {
+	border: 1px dotted #ccc;
+	display: block;
+	height: 32px;
+	padding: 0;
+	width: 32px;
+}
+//use sass to style these inputs better
+input[type=text],
+input[type=url],
+input[type=tel],
+input[type=number],
+input[type=color],
+input[type=email], {
+	/* And that ain't all of them... */
+}
+
+span:required {
+	background: darkred;
+	display: block;
+	height: 6%;
+	width: 6%; }
+
+::-webkit-input-placeholder {
+	/* WebKit browsers */
+	color: #222; }
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #222;
+	opacity: 1; }
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #222;
+	opacity: 1; }
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10+ */
+	color: #222; }
+
+main {
+	margin: 0 auto;
+	width: 80%; }
+
+progress {
+	width: 100%; }
+
+.col {
+	margin: 0 15px;
+}
+
+//input has attribute required instead of class
+.required:after {
+	color: darkred;
+	content: "\002A ";
+	display: block;
+	font-size: 8rem;
+	height: 20px;
+	padding: 40px
+	width: 20px;
+}
